@@ -1,0 +1,51 @@
+# ==========================================
+# Quarto & Markdown Kern-Dateien
+# ==========================================
+# Temporärer Cache und Render-Artefakte von Quarto
+/.quarto/
+
+
+## Projekt-Dateien
+*Rproj
+
+# Lokale Konfigurationsdateien (enthalten oft nutzerspezifische Pfade)
+_quarto.yml.local
+
+# Generierte Ausgabe-Verzeichnisse (nur ignorieren, wenn das Deployment über CI/CD läuft)
+# Falls Sie GitHub Pages direkt aus einem lokalen Ordner bedienen, diese Zeilen auskommentieren!
+/_site/
+/_book/
+
+# Generierte Intermediates / Zwischenschritte aus dem Render-Prozess
+*_files/
+*_cache/
+/cache/
+*typ
+*rmarkdown
+
+# Große Daten
+*.tsv
+*.csv
+
+# ==========================================
+# R & RStudio (falls genutzt)
+# ==========================================
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*-Ex.R
+/*.tar.gz
+/*.Rcheck/
+.httr-oauth
+# Knitr/RMarkdown spezifischer Cache
+*.utf8.md
+*.knit.md
+
+# ==========================================
+# Betriebssystem-Spezifisches
+# ==========================================
+.DS_Store
+Thumbs.db
+
+**/*.quarto_ipynb
