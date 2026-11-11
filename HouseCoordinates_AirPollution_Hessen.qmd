@@ -28,6 +28,11 @@ This is the IVU data
 airpoll_folder<-"N:/4all.i4/I4.10 - Projekte/Luftschadstoffkartierung/Ergebnisse/ergebnisse_vorbelastung_2019/"
 shp_files <- list.files(path = airpoll_folder, pattern = "\\.shp$", full.names = TRUE)
 
+print(shp_files)
+
+no2<-shp_files[2] |> 
+  sf::st_read()
+
 pm25<-shp_files[6] |> 
   sf::st_read()
 
